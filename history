@@ -430,3 +430,81 @@
   430  git config --list
   431  git init
   432  history > history
+  433  git status
+  434  git add history
+  435  git commit -m 'This is supposed to add my history to my repository'
+  436  git remote add origin https://git@github.com:weiqunvchen/myopenstack.git
+  437  git push origin master
+  438  git remote add origin https://github.com:weiqunvchen/myopenstack.git
+  439  git push origin master
+  440  git remote add origin https://github.com/weiqunvchen/myopenstack.git
+  441  git remote rm origin
+  442  git remote add origin https://github.com:weiqunvchen/myopenstack.git
+  443  git pull origin mastergit pull origin master
+  444  git pull origin master
+  445  exit
+  446  source keystonerc_admin
+  447  glance image-list
+  448  glance help image-create
+  449  glance image-create --name cirros_alpha --disk-format qcow2 --container-format bare --is-public true --location https://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
+  450  glance image-list
+  451  neutron net-list
+  452  nova boot --flavor custom.shrimpy --image cirros_alpha --nic net-id=20ca30a2-e3fb-4e62-bd78-08dc471e93ed admin_box
+  453  exit
+  454  pvdisplay
+  455  source keystonerc_chestercopperpot
+  456  cinder create --display_name NASferatu 1
+  457  cinder list
+  458  nova listnova list
+  459  nova list
+  460  nova volume-attach 93164112-35c1-44e4-a096-c18d38c6fc1f b3cbd93c-0d11-4196-ae80-464299e15d60
+  461  nova volume-attach 93164112-35c1-44e4-a096-c18d38c6fc1f b3cbd93c-0d
+  462  nova volume-attach 93164112-35c1-44e4-a096-c18d38c6fc1f b3cbd93c-0d11-4196-ae80-464299e15d60 auto
+  463  cinder list
+  464  nova volume-detachnova volume-detach 93164112-35c1-44e4-a096-c18d38c6fc1f b3cbd93c-0d11-4196-ae80-464299e15d60
+  465  nova volume-detach 93164112-35c1-44e4-a096-c18d38
+  466  nova volume-detach 93164112-35c1-44e4-a096-c18d38c6fc1f b3cbd93c-0d11-4196-ae80-464299e15d60
+  467  cinder list
+  468  cinder delete NASferatu
+  469  cinder list
+  470  nova show vt2 | grep network
+  471  neutron router-list | cut -c -59
+  472  ssh root@neutron
+  473  nova list
+  474  nova start vt3
+  475  nova list
+  476  ssh root@neutron
+  477  neutron net-list | grep vault
+  478  nova boot --flavor m1.tiny --image cirros --nic net-id=nova boot --flavor m1.tiny --image cirros --nic net-id=e8ae73be-9751-4351-8567-41344187f754 --security-groups http-ssh vt4
+  479  nova boot --
+  480  flavor m1.tiny --image cirros --nic net-id=e8ae73be-9751-4351-8567-41344187f754 --security-groups http-ssh vt4nova boot --flavor m1.tiny --imag
+  481  neutron net-list | grep vault
+  482  nova boot --flavor m1.tiny --image cirros --nic net-id=e8ae73be-9751-4351-8567-41344187f754 --security-groups http-ssh vt4
+  483  nova list
+  484  nova ?
+  485  nova help
+  486  nova help | grep -i stop
+  487  nova stop vt2
+  488  nova list
+  489  cinder listcinder list
+  490  cinder list
+  491  nova list
+  492  cinder list
+  493  nova volume-detach 93164112-35c1-44e4-a096-c18d38c6fc1f 34111926-a46e-4972-ba02-14405a6fce1e
+  494  cinder list
+  495  nova volume-attach 5095bc90-a483-4454-a7ee-8be80d0eb759 34111926-a46e-4972-ba02-14405a6fce1e
+  496  cinder list
+  497  ssh vt3
+  498  nova list
+  499  ssh root@neutronssh root@neutron
+  500  exit
+  501  ssh root@neutron
+  502  su centos
+  503  exit
+  504  cd myopenstack
+  505  yum install git
+  506  git config --global user.name "---chen---"
+  507  git config --global user.email "weiqunchen13@gmail.com"
+  508  git config --list
+  509  git init
+  510  history > historyhistory > history
